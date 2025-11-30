@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast Bites - Premium Supplements</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="headernavbar-white">
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/BBS-logo-white.avif" alt="Beast Bites" class="logo-white">
+                        <img src="images/BBS_Logo_2024.avif" alt="Beast Bites" class="logo-colored">
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="index.html" class="nav-link">SHOP <span class="dropdown-arrow"><svg class="icon-downangle" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path d="M7 10.4521L12 15.4521L17 10.4521" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path>
+                                    </svg></span></a>
+                            <!-- Mega Menu -->
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-left">
+                                        <h2>UNLOCK YOUR<br>FULL POTENTIAL</h2>
+                                        <div class="benefits">
+                                            <div class="benefit">
+                                                <span class="checkmark">✓</span>
+                                                <span>Increase your muscle power</span>
+                                            </div>
+                                            <div class="benefit">
+                                                <span class="checkmark">✓</span>
+                                                <span>Boosts physical performance</span>
+                                            </div>
+                                            <div class="benefit">
+                                                <span class="checkmark">✓</span>
+                                                <span>Speeds up recovery time</span>
+                                            </div>
+                                        </div>
+                                        <button class="mega-menu-btn">SHOP BESTSELLERS</button>
+                                        <div class="shipping-info">
+                                            <span class="shipping-icon">📦</span>
+                                            <span>FREE Shipping on Subscriptions & Orders $70+</span>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu-products">
+                                        <div class="product-column">
+                                            <div class="product-item">
+                                                <h3>CREATINE GUMMIES</h3>
+                                                <img class="product-image" src="images/image-removebg-preview.webp" alt="">
+                                            </div>
+                                            <button class="product-btn" onclick="window.location.href='creatine-gummies.html'">SHOP NOW →</button>
+                                        </div>
+                                        <div class="product-column">
+                                            <div class="product-item">
+                                                <h3>SLEEP GUMMIES</h3>
+                                                <img class="product-image" src="images/megamenu-Sleep-gummies.webp" alt="">
+                                            </div>
+                                            <button class="product-btn" onclick="window.location.href='sleep-gummies.html'">SHOP NOW →</button>
+                                        </div>
+                                        <div class="product-column">
+                                            <div class="product-item">
+                                                <h3>CREATINE POWDER</h3>
+                                                <img class="product-image" src="images/BBS_Creatine_Powder_1.webp" alt="">
+                                            </div>
+                                            <button class="product-btn" onclick="window.location.href='creatine-powder.html'">SHOP NOW →</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                        <li><a href="reviews.html" class="nav-link">REVIEWS</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="shop-now-btn" onclick="window.location.href='index.html'">SHOP NOW</button>
+                    <div class="cart-icon" style="position: relative; cursor: pointer;" onclick="window.location.href='cart.html'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M5.00014 14.2522H18.1359C19.1487 14.2522 19.6551 14.2522 20.0582 14.0634C20.4134 13.897 20.7118 13.6299 20.9163 13.2954C21.1485 12.9155 21.2044 12.4122 21.3163 11.4056L21.9013 6.14054C21.9355 5.83308 21.9525 5.67935 21.9031 5.56036C21.8597 5.45585 21.7821 5.36917 21.683 5.31447C21.5702 5.2522 21.4155 5.2522 21.1062 5.2522H4.50014M2 2.2522H3.24844C3.51306 2.2522 3.64537 2.2522 3.74889 2.30252C3.84002 2.34683 3.91554 2.41777 3.96544 2.50596C4.02212 2.60613 4.03037 2.73819 4.04688 3.00229L4.95312 17.5021C4.96963 17.7662 4.97788 17.8983 5.03456 17.9984C5.08446 18.0866 5.15998 18.1576 5.25111 18.2019C5.35463 18.2522 5.48694 18.2522 5.75156 18.2522H19M7.5 21.7522H7.51M16.5 21.7522H16.51M8 21.7522C8 22.0283 7.77614 22.2522 7.5 22.2522C7.22386 22.2522 7 22.0283 7 21.7522C7 21.4761 7.22386 21.2522 7.5 21.2522C7.77614 21.2522 8 21.4761 8 21.7522ZM17 21.7522C17 22.0283 16.7761 22.2522 16.5 22.2522C16.2239 22.2522 16 22.0283 16 21.7522C16 21.4761 16.2239 21.2522 16.5 21.2522C16.7761 21.2522 17 21.4761 17 21.7522Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </div>
+                    <div class="user-icon">
+                        <svg class="icon icon_user" xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                            <title>account</title>
+                            <path d="M14 4.14551C15.4718 4.14551 16.8508 4.42027 18.1357 4.96875L18.6094 5.18359C19.696 5.70703 20.6555 6.38431 21.4873 7.21582V7.2168L21.835 7.58105C22.6225 8.44936 23.2559 9.44525 23.7354 10.5684L23.9287 11.0547C24.3487 12.1996 24.5586 13.4162 24.5586 14.7041C24.5586 15.992 24.3487 17.2086 23.9287 18.3535L23.7354 18.8398C23.2559 19.963 22.6225 20.9588 21.835 21.8271L21.4873 22.1914C20.6554 23.0231 19.6962 23.7011 18.6094 24.2246L18.1357 24.4395C16.8508 24.9879 15.4718 25.2627 14 25.2627C12.7121 25.2627 11.4955 25.0528 10.3506 24.6328L9.86426 24.4395C8.58057 23.8914 7.46344 23.142 6.5127 22.1914H6.51172C5.68021 21.3596 5.00293 20.4001 4.47949 19.3135L4.26465 18.8398C3.71617 17.5549 3.44141 16.1759 3.44141 14.7041C3.44141 13.2323 3.71617 11.8533 4.26465 10.5684L4.47949 10.0947C5.00293 9.00807 5.68021 8.04859 6.51172 7.2168L6.5127 7.21582L6.87695 6.86914C7.74526 6.08156 8.74115 5.44821 9.86426 4.96875L10.3506 4.77539C11.4955 4.35545 12.7121 4.14551 14 4.14551ZM14 20.0127C12.9856 20.0127 12.0337 20.1448 11.1436 20.4082L10.7656 20.5283C9.79257 20.8641 8.94432 21.3318 8.21875 21.9287C8.95984 22.5557 9.83435 23.0529 10.8447 23.418L11.2344 23.5498C12.1434 23.836 13.0652 23.9795 14 23.9795C15.0685 23.9795 16.1204 23.792 17.1553 23.418L17.5361 23.2715C18.3865 22.9241 19.1333 22.4759 19.7793 21.9297C19.1344 21.4214 18.4045 21.0035 17.5879 20.6777L17.2227 20.54C16.2334 20.1888 15.1591 20.0127 14 20.0127ZM14 5.42871C11.4293 5.42871 9.24161 6.33163 7.43457 8.13867C5.62753 9.94572 4.72461 12.1334 4.72461 14.7041C4.72461 15.9936 4.9583 17.1769 5.42383 18.2549L5.60547 18.6533C6.03863 19.551 6.58297 20.3416 7.2373 21.0264C8.22084 20.3241 9.26304 19.7665 10.3652 19.3555L10.7891 19.209C11.7892 18.8891 12.8596 18.7295 14 18.7295C15.3031 18.7295 16.5149 18.9377 17.6348 19.3555L18.0508 19.5186C19 19.9096 19.903 20.4133 20.7617 21.0264C21.5114 20.242 22.1168 19.3188 22.5762 18.2549L22.7402 17.8457C23.0967 16.8795 23.2754 15.8324 23.2754 14.7041C23.2754 12.2941 22.4816 10.2211 20.8936 8.48242L20.5654 8.13867C18.7584 6.33163 16.5707 5.42871 14 5.42871ZM13.999 8.22949C14.9971 8.22949 15.8417 8.57258 16.5283 9.25879L16.6533 9.38867C17.2568 10.0505 17.5586 10.8514 17.5586 11.7871C17.5585 12.7228 17.2566 13.5234 16.6533 14.1855L16.5293 14.3154C15.8432 15.002 14.9989 15.3456 14.001 15.3457C13.0655 15.3457 12.2646 15.0443 11.6025 14.4414L11.4717 14.3164C10.7851 13.6302 10.4414 12.7861 10.4414 11.7881C10.4414 10.79 10.7845 9.94539 11.4707 9.25879L11.6016 9.13477C12.2633 8.53125 13.0634 8.22958 13.999 8.22949ZM14 9.5127C13.4399 9.5127 12.9585 9.68066 12.5527 10.0166L12.3828 10.1709C11.9443 10.6098 11.7247 11.1473 11.7246 11.7871C11.7246 12.4271 11.9441 12.9653 12.3828 13.4043L12.5527 13.5586C12.9585 13.8944 13.44 14.0625 14 14.0625C14.6401 14.0625 15.1781 13.8432 15.6172 13.4043L15.7715 13.2354C16.1075 12.8295 16.2754 12.3472 16.2754 11.7871C16.2753 11.2272 16.1073 10.7455 15.7715 10.3398L15.6172 10.1709C15.1781 9.73204 14.6401 9.5127 14 9.5127Z" fill="currentColor" stroke="currentColor" stroke-width="0.116667"></path>
+                        </svg>
+                    </div>
+                    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="mobile-sidebar-content">
+            <div class="mobile-sidebar-header">
+                <div class="mobile-logo">
+                    <img src="images/BBS-logo-white.avif" alt="Beast Bites">
+                </div>
+                <div class="mobile-close" id="mobileClose">
+                    <span>×</span>
+                </div>
+            </div>
+
+            <nav class="mobile-nav">
+                <div class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link">SHOP</a>
+                    <div class="mobile-submenu">
+                        <div class="mobile-product-grid">
+                            <div class="mobile-product-column">
+                                <div class="mobile-product-item">
+                                    <h3>CREATINE GUMMIES</h3>
+                                    <img class="mobile-product-image" src="images/image-removebg-preview.webp" alt="Creatine Gummies">
+                                </div>
+                                <button class="mobile-product-btn">SHOP NOW →</button>
+                            </div>
+                            <div class="mobile-product-column">
+                                <div class="mobile-product-item">
+                                    <h3>SLEEP GUMMIES</h3>
+                                    <img class="mobile-product-image" src="images/megamenu-Sleep-gummies.webp" alt="Sleep Gummies">
+                                </div>
+                                <button class="mobile-product-btn">SHOP NOW →</button>
+                            </div>
+                            <div class="mobile-product-column">
+                                <div class="mobile-product-item">
+                                    <h3>CREATINE POWDER</h3>
+                                    <img class="mobile-product-image" src="images/BBS_Creatine_Powder_1.webp" alt="Creatine Powder">
+                                </div>
+                                <button class="mobile-product-btn">SHOP NOW →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="mobile-nav-link">ABOUT</a>
+                <a href="reviews.html" class="mobile-nav-link">REVIEWS</a>
+            </nav>
+
+            <div class="mobile-sidebar-footer">
+                <button class="mobile-shop-btn">SHOP NOW</button>
+                <div class="mobile-icons">
+                    <div class="mobile-cart">🛒</div>
+                    <div class="mobile-user">👤</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+
+    <div class="product-details-wrapper">
+        <div class="main-wrapper">
+            <div class="product-wrapper">
+                <!-- Left Side: Image Swapper -->
+                <div class="product-images">
+                    <!-- Main Slider -->
+                    <div class="swiper mainSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/shopify_blue-raz.webp" alt="Product Image 1"></div>
+                            <div class="swiper-slide"><img src="images/2_1.webp" alt="Product Image 2"></div>
+                            <div class="swiper-slide"><img src="images/3_1.webp" alt="Product Image 3"></div>
+                            <div class="swiper-slide"><img src="images/4_2.webp" alt="Product Image 4"></div>
+                            <div class="swiper-slide"><img src="images/6_4.webp" alt="Product Image 4"></div>
+                            <div class="swiper-slide"><img src="images/shopify_hawaiian.webp" alt="Product Image 4"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <!-- Thumbnail Slider -->
+                    <div class="swiper thumbSwiper" style="margin-top: 15px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/shopify_blue-raz.webp" alt="Thumbnail 1"></div>
+                            <div class="swiper-slide"><img src="images/2_1.webp" alt="Thumbnail 2"></div>
+                            <div class="swiper-slide"><img src="images/3_1.webp" alt="Thumbnail 3"></div>
+                            <div class="swiper-slide"><img src="images/4_2.webp" alt="Thumbnail 4"></div>
+                            <div class="swiper-slide"><img src="images/6_4.webp" alt="Thumbnail 4"></div>
+                            <div class="swiper-slide"><img src="images/shopify_hawaiian.webp" alt="Thumbnail 4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Product Details -->
+                <div class="product-details">
+                    <div class="detail-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">Rated as “Excellent”</span>
+                        <a href="#reviews" class="reviews-link">(642 reviews)</a>
+                    </div>
+                    <h1 class="detail-title">CREATINE INFUSED GUMMIES</h1>
+                    <div class="detail-badges">
+                        <span class="detail-badge">$0.96 / Serving</span>
+                        <span class="detail-badge">150 Gummies</span>
+                        <span class="detail-badge">30-Day Supply</span>
+                    </div>
+                    <div class="detail-price-row">
+                        <span class="old-price">$39.99</span>
+                        <span class="price">$28.99</span>
+                        <span class="save-badge">SAVE 28%</span>
+                    </div>
+                    <hr class="detail-divider">
+                    <ul class="detail-features">
+                        <li class="feature-item"><span class="feature-icon">💪</span> 5g of Creatine Monohydrate per
+                            serving</li>
+                        <li class="feature-item"><span class="feature-icon">✅</span> Non-GMO, Vegan, and Cruelty-Free
+                        </li>
+                        <li class="feature-item"><span class="feature-icon">🇺🇸</span> Made and shipped from the US
+                        </li>
+                    </ul>
+
+                    <div class="cert-cards">
+                        <div class="cert-card">
+                            <div class="cert-icon"><img src="images/creapure-certified.avif" alt="Creapure Certified">
+                            </div>
+                            <div class="cert-content">
+                                <div class="cert-title">CREAPURE® CERTIFIED CREATINE</div>
+                                <div class="cert-sub">The purest creatine, at the lowest price</div>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><img src="images/NSF.svg" alt="NSF Certified for Sport"></div>
+                            <div class="cert-content">
+                                <div class="cert-title">NSF CERTIFIED FOR SPORT®</div>
+                                <div class="cert-sub">Trusted by global athletes.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="add-to-cart">Add to Cart</button>
+
+                    <div class="checkout-extra">
+                        <div class="eta-row"><span class="eta-dot"></span> Order today and get it by <strong>Saturday,
+                                Nov 22nd</strong></div>
+                        <div class="payment-icons">
+                            <img src="images/payment.webp" alt="Payment methods">
+                        </div>
+                    </div>
+
+                    <div class="variety-section">
+                        <div class="variety-label">OR TRY OUR VARIETY PACK</div>
+                        <div class="variety-card">
+                            <div class="variety-media"><img src="images/63.png" alt="Creatine and Valerian Bundle">
+                            </div>
+                            <div class="variety-content">
+                                <div class="variety-title">CREATINE AND VALERIAN GUMMY BUNDLE</div>
+                                <div class="variety-price"><span class="old-price">$79.99</span> <span class="price">$49.99</span></div>
+                            </div>
+                            <a href="#" class="variety-shop">SHOP →</a>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item active open">
+                            <button class="accordion-header">How To Take It <span class="plus"></span></button>
+                            <div class="accordion-content">
+                                Take 5 gummies daily for best results. Use anytime that fits your routine,
+                                whether before or after a workout or whenever you need a boost.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">Ingredients <span class="plus"></span></button>
+                            <div class="accordion-content">
+                                Creatine monohydrate, pectin, natural flavors, citric acid, cane sugar.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">Contact Us <span class="plus"></span></button>
+                            <div class="accordion-content">
+                                Email support@beastbites.com for help with orders or questions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pure Proven Perfect Section -->
+        <section class="pure-proven-section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="text-content">
+                        <h2>PURE. PROVEN. PERFECT.<br>THE GOLD STANDARD.</h2>
+                        <div class="creapure-info">
+                            <img src="images/creapure-certified.avif" alt="Creapure" class="creapure-logo">
+                            <p>Creapure is the purest form of creatine on the market. It's 100% made in our dedicated
+                                facility in Germany.</p>
+                        </div>
+                    </div>
+
+                    <div class="expandable-cards">
+                        <div class="card-item active" data-card="purity">
+                            <div class="card-header">
+                                <span class="card-title">99% PURITY</span>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Creapure is 100% made in our dedicated facility in Germany.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="99% Purity">
+                            </div>
+                        </div>
+
+                        <div class="card-item" data-card="quality">
+                            <div class="card-header">
+                                <span class="card-title">HIGH-QUALITY</span>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Creapure ensures a continuous high quality level.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="High Quality">
+                            </div>
+                        </div>
+
+                        <div class="card-item" data-card="expertise">
+                            <div class="card-header">
+                                <span class="card-title">EXPERTISE</span>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Decades of expertise in creatine manufacturing.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Expertise">
+                            </div>
+                        </div>
+
+                        <div class="card-item" data-card="tested">
+                            <div class="card-header">
+                                <span class="card-title">LAB TESTED</span>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Rigorously tested in certified laboratories.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lab Tested">
+                            </div>
+                        </div>
+
+                        <div class="card-item" data-card="transparent">
+                            <div class="card-header">
+                                <span class="card-title">FULLY TRANSPARENT</span>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Complete transparency in our manufacturing process.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fully Transparent">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Testimonials -->
+        <section class="video-testimonials-section product-video-testimonials">
+            <div class="video-testimonials-header">
+                <div class="video-rating">
+                    <span class="video-stars">★★★★★</span>
+                    <span class="video-rating-text">4.65 BASED ON 20,000 REVIEWS</span>
+                </div>
+                <h2 class="video-testimonials-title">loved by our customers</h2>
+            </div>
+
+            <div class="video-grid-container">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video class="custom-video" preload="metadata">
+                            <source src="images/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <div class="custom-play-btn">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-quote">"Bio was lying the whole time 🤦"</p>
+                        <p class="video-name">DAILYVIDZ</p>
+                        <p class="video-handle">@dailyvideoz</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video class="custom-video" preload="metadata">
+                            <source src="images/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <div class="custom-play-btn">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-quote">"This is insane 🔥"</p>
+                        <p class="video-name">PRITI</p>
+                        <p class="video-handle">@priti18</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video class="custom-video" preload="metadata">
+                            <source src="images/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <div class="custom-play-btn">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-quote">"Best product ever! 💯"</p>
+                        <p class="video-name">MERCER</p>
+                        <p class="video-handle">@mercerrollan</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video class="custom-video" preload="metadata">
+                            <source src="images/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <div class="custom-play-btn">
+                                <div class="play-icon">▶</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-quote">"The supplement I took to help pooping 🚀"</p>
+                        <p class="video-name">TAMAR</p>
+                        <p class="video-handle">@glamliest</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="science-section container">
+            <div class="science-header">
+                <h2>THE SCIENCE BEHIND CREATINE</h2>
+                <div class="science-badges">
+                    <span class="science-badge"><span class="badge-icon">✓</span> Creapure® Certified</span>
+                    <span class="science-badge"><span class="badge-icon">🧪</span> #1 Researched Supplement</span>
+                </div>
+            </div>
+            <div class="science-grid">
+                <div class="science-card">
+                    <div class="science-thumb"><img src="images/pmid-33917009_medium.webp" alt=""></div>
+                    <div class="science-info">
+                        <div class="science-meta">PMID: 37096381</div>
+                        <div class="science-title">Creatine supplementation and endurance performance</div>
+                    </div>
+                </div>
+                <div class="science-card">
+                    <div class="science-thumb"><img src="images/pmid-33917009_medium.webp" alt=""></div>
+                    <div class="science-info">
+                        <div class="science-meta">PMID: 34071875</div>
+                        <div class="science-title">The Application of Creatine Supplementation in Medical Rehabilitation
+                        </div>
+                    </div>
+                </div>
+                <div class="science-card">
+                    <div class="science-thumb"><img src="images/pmid-33917009_medium.webp" alt=""></div>
+                    <div class="science-info">
+                        <div class="science-meta">PMID: 35267907</div>
+                        <div class="science-title">Effects of Creatine Supplementation on Brain Function and Health
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-section container">
+            <div class="quality-header">
+                <h2>UNPARALLELED QUALITY</h2>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-card quality-creapure">
+                    <div class="quality-media"><img src="images/Frame_1000010514.webp" alt="Creapure"></div>
+                    <div class="quality-content">
+                        <div class="quality-label">Creapure®</div>
+                        <div class="quality-purity">98% Purity</div>
+                        <ul class="quality-list quality-list-good">
+                            <li>Highest creatine purity</li>
+                            <li>Sourced from Germany</li>
+                            <li>NSF Certified</li>
+                            <li>FDA-Registered</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quality-card quality-generic">
+                    <div class="quality-media"><img src="images/751df1b1cf2042362580ed37e948d9d1a48c58bc.webp" alt="Generic Creatine"></div>
+                    <div class="quality-content">
+                        <div class="quality-label">Generic Creatine</div>
+                        <div class="quality-purity">40–63% Purity</div>
+                        <ul class="quality-list quality-list-bad">
+                            <li>No quality control</li>
+                            <li>Unknown source</li>
+                            <li>No certifications</li>
+                            <li>Not FDA-Registered</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="quality-footnote">Creapure® is directly sourced from Germany, guaranteeing the highest purity and
+                quality.</p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-content">
+                    <div class="faq-left">
+                        <div class="faq-image">
+                            <img src="images/Frame_1000010442.webp" alt="FAQ Image">
+                        </div>
+                    </div>
+
+                    <div class="faq-right">
+                        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>Do your gummies contain gelatin?</span>
+                                    <div class="accordion-icon">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>No, our gummies are made with pectin, making them vegan-friendly and suitable for
+                                        all dietary preferences.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>What do your gummies taste like?</span>
+                                    <div class="accordion-icon">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Our gummies come in delicious fruit flavors including watermelon, blue raspberry,
+                                        and mixed berry. They taste great without any chalky aftertaste.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>When should I consume them?</span>
+                                    <div class="accordion-icon">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>For best results, consume 2-3 gummies 30 minutes before your workout. You can
+                                        also take them post-workout for recovery benefits.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>Where can I find nutrition & ingredient info?</span>
+                                    <div class="accordion-icon">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Complete nutrition facts and ingredient lists are available on each product page
+                                        and on the product packaging.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>How many servings are in each container?</span>
+                                    <div class="accordion-icon">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Each container contains 30 servings, with each serving being 2-3 gummies
+                                        depending on the product.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>How long does it take for my order to arrive?</span>
+                                    <div class="accordion-icon">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Orders are processed the same day and usually arrive within 3 to 5 days.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="reviews-section container">
+            <div class="reviews-header">
+                <h2>CUSTOMER REVIEWS</h2>
+            </div>
+            <div class="reviews-summary">
+                <div class="summary-rating">
+                    <div class="stars">★★★★★</div>
+                    <a href="#" class="rating-link">4.09 out of 5</a>
+                    <div class="rating-sub">Based on 642 reviews</div>
+                </div>
+                <div class="summary-breakdown">
+                    <div class="breakdown-row">
+                        <span class="star-label">★★★★★</span>
+                        <div class="bar"><span style="width:68%"></span></div>
+                        <span class="count">439</span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span class="star-label">★★★★☆</span>
+                        <div class="bar"><span style="width:6%"></span></div>
+                        <span class="count">37</span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span class="star-label">★★★☆☆</span>
+                        <div class="bar"><span style="width:6%"></span></div>
+                        <span class="count">37</span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span class="star-label">★★☆☆☆</span>
+                        <div class="bar"><span style="width:7%"></span></div>
+                        <span class="count">42</span>
+                    </div>
+                    <div class="breakdown-row">
+                        <span class="star-label">★☆☆☆☆</span>
+                        <div class="bar"><span style="width:14%"></span></div>
+                        <span class="count">87</span>
+                    </div>
+                </div>
+                <div class="summary-cta">
+                    <a href="#" class="write-review">WRITE A REVIEW ✍️</a>
+                </div>
+            </div>
+
+            <div class="reviews-filter">
+                <button class="filter-btn">Highest Rating ▾</button>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="star-row">★★★★★</div>
+                    <div class="review-header">
+                        <span class="name">christian ortogero</span>
+                        <span class="verified-badge">Verified</span>
+                    </div>
+                    <div class="review-title">Gummies</div>
+                    <div class="review-text">They’re awesome</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="star-row">★★★★★</div>
+                    <div class="review-header">
+                        <span class="name">K.G.</span>
+                        <span class="verified-badge">Verified by shop</span>
+                    </div>
+                    <div class="review-text">Very yummy!</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="star-row">★★★★★</div>
+                    <div class="review-header">
+                        <span class="name">Jose</span>
+                        <span class="verified-badge">Verified by shop</span>
+                    </div>
+                    <div class="review-text">The flavor is the best!</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="star-row">★★★★★</div>
+                    <div class="review-header">
+                        <span class="name">Erin McCarthy</span>
+                        <span class="verified-badge">Verified</span>
+                    </div>
+                    <div class="review-title">Creatine</div>
+                    <div class="review-text">Very happy with product. Will continue using.</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="star-row">★★★★★</div>
+                    <div class="review-header">
+                        <span class="name">Marshall Romero</span>
+                        <span class="verified-badge">Verified</span>
+                    </div>
+                    <div class="review-text">Creatine Infused Gummies</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="images/BBS-logo-white.avif" alt="Beast Bites">
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32">
+                                <title>instagram</title>
+                                <path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path>
+                                <path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tiktok" viewBox="0 0 2859 3333">
+                                <path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20">
+                                <path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>ABOUT US</h3>
+                        <ul>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>LEGAL</h3>
+                        <ul>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>UNLEASH THE BEAST WITHIN!</h3>
+                    <p>Join to get exclusive offers & discounts</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <img src="payment-icon.avif " alt="Visa">
+                </div>
+
+                <div class="footer-legal">
+                    <p>© 2025 Beast Bites Supplements Inc.</p>
+                    <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            // Header scroll effect
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $('.header').addClass('scrolled');
+                } else {
+                    $('.header').removeClass('scrolled');
+                }
+            });
+
+            // Mobile menu toggle
+            $('#mobileMenuToggle').click(function () {
+                $('#mobileSidebar').addClass('active');
+                $('#mobileSidebarOverlay').addClass('active');
+                $('body').addClass('sidebar-open');
+            });
+
+            // Close sidebar
+            $('#mobileClose, #mobileSidebarOverlay').click(function () {
+                $('#mobileSidebar').removeClass('active');
+                $('#mobileSidebarOverlay').removeClass('active');
+                $('body').removeClass('sidebar-open');
+            });
+
+            // Mobile submenu toggle
+            $('.mobile-nav-item > .mobile-nav-link').click(function (e) {
+                e.preventDefault();
+                $(this).parent().toggleClass('active');
+            });
+
+            // Prevent body scroll when sidebar is open
+            $('.mobile-sidebar').on('touchmove', function (e) {
+                if ($('body').hasClass('sidebar-open')) {
+                    e.preventDefault();
+                }
+            });
+
+            // Prevent video click from doing anything
+            $('.custom-video').click(function (e) {
+                e.preventDefault();
+                return false;
+            });
+
+            // Product Detail
+
+            // Initialize Swiper sliders
+            const thumbSwiper = new Swiper('.thumbSwiper', {
+                loop: false,
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 3,
+                        spaceBetween: 8
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 10
+                    }
+                }
+            });
+
+            const mainSwiper = new Swiper('.mainSwiper', {
+                loop: false,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                thumbs: {
+                    swiper: thumbSwiper,
+                },
+            });
+            // Flavor selection
+            document.querySelectorAll('.flavor').forEach(button => {
+                button.addEventListener('click', function () {
+                    document.querySelectorAll('.flavor').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            $('.product-wrapper .accordion-header').on('click', function () {
+                const item = $(this).closest('.accordion-item');
+                item.toggleClass('open active');
+            });
+            // Ensure first item is open by default
+            $('.product-wrapper .accordion .accordion-item').first().addClass('open active');
+
+            // Expandable cards functionality
+            $('.card-item').click(function () {
+                const $clickedCard = $(this);
+
+                // Don't do anything if already active
+                if ($clickedCard.hasClass('active')) {
+                    return;
+                }
+
+                // Remove active class from all cards
+                $('.card-item').removeClass('active');
+
+                // Add active class to clicked card
+                $clickedCard.addClass('active');
+            });
+
+
+            // Custom video player functionality - only play button click
+            $('.custom-play-btn').click(function (e) {
+                e.stopPropagation();
+                const $playBtn = $(this);
+                const $overlay = $playBtn.parent();
+                const $videoContainer = $overlay.parent();
+                const $video = $videoContainer.find('.custom-video')[0];
+                const $playIcon = $playBtn.find('.play-icon');
+
+                // Stop all other videos first
+                $('.custom-video').each(function () {
+                    if (this !== $video) {
+                        this.pause();
+                        this.currentTime = 0;
+                        $(this).siblings('.video-overlay').removeClass('playing');
+                        $(this).siblings('.video-overlay').find('.play-icon').text('▶').removeClass('pause');
+                    }
+                });
+
+                // Toggle current video
+                if ($video.paused) {
+                    $video.play();
+                    $overlay.addClass('playing');
+                    $playIcon.text('⏸').addClass('pause');
+                } else {
+                    $video.pause();
+                    $overlay.removeClass('playing');
+                    $playIcon.text('▶').removeClass('pause');
+                }
+            });
+
+            // Handle video ended event
+            $('.custom-video').on('ended', function () {
+                const $video = $(this);
+                const $overlay = $video.siblings('.video-overlay');
+                const $playIcon = $overlay.find('.play-icon');
+
+                $video[0].currentTime = 0;
+                $overlay.removeClass('playing');
+                $playIcon.text('▶').removeClass('pause');
+            });
+
+            // Prevent video click from doing anything
+            $('.custom-video').click(function (e) {
+                e.preventDefault();
+                return false;
+            });
+
+
+
+            // Accordion functionality
+            $('.faq-section .accordion-header').click(function () {
+                const $accordionItem = $(this).parent();
+                const $accordionContent = $accordionItem.find('.accordion-content');
+
+                // Check if this item is currently active
+                const isActive = $accordionItem.hasClass('active');
+
+                // Close all accordion items
+                $('.faq-section .accordion-item').removeClass('active');
+                $('.faq-section .accordion-content').css('max-height', '0');
+
+                // If the clicked item wasn't active, open it
+                if (!isActive) {
+                    $accordionItem.addClass('active');
+                    $accordionContent.css('max-height', $accordionContent[0].scrollHeight + 'px');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Beast Bites</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="cart.js" defer></script>
+    <script src="cart-page.js" defer></script>
+</head>
+
+<body class="headernavbar-white">
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+            <span>FREE SHIPPING ON SUBSCRIPTIONS & ORDERS $70+</span>
+            <span>NSF CERTIFIED FOR SPORT</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/BBS-logo-white.avif" alt="Beast Bites" class="logo-white">
+                        <img src="images/BBS_Logo_2024.avif" alt="Beast Bites" class="logo-colored">
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="index.html" class="nav-link">SHOP <span class="dropdown-arrow"><svg class="icon-downangle" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path d="M7 10.4521L12 15.4521L17 10.4521" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path>
+                                    </svg></span></a>
+                            <!-- Mega Menu -->
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-left">
+                                        <h2>UNLOCK YOUR<br>FULL POTENTIAL</h2>
+                                        <div class="benefits">
+                                            <div class="benefit">
+                                                <span class="checkmark">✓</span>
+                                                <span>Increase your muscle power</span>
+                                            </div>
+                                            <div class="benefit">
+                                                <span class="checkmark">✓</span>
+                                                <span>Boosts physical performance</span>
+                                            </div>
+                                            <div class="benefit">
+                                                <span class="checkmark">✓</span>
+                                                <span>Speeds up recovery time</span>
+                                            </div>
+                                        </div>
+                                        <button class="mega-menu-btn">SHOP BESTSELLERS</button>
+                                        <div class="shipping-info">
+                                            <span class="shipping-icon">📦</span>
+                                            <span>FREE Shipping on Subscriptions & Orders $70+</span>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu-products">
+                                        <div class="product-column">
+                                            <div class="product-item">
+                                                <h3>CREATINE GUMMIES</h3>
+                                                <img class="product-image" src="images/image-removebg-preview.webp" alt="">
+                                            </div>
+                                            <button class="product-btn" onclick="window.location.href='creatine-gummies.html'">SHOP NOW →</button>
+                                        </div>
+                                        <div class="product-column">
+                                            <div class="product-item">
+                                                <h3>SLEEP GUMMIES</h3>
+                                                <img class="product-image" src="images/megamenu-Sleep-gummies.webp" alt="">
+                                            </div>
+                                            <button class="product-btn" onclick="window.location.href='sleep-gummies.html'">SHOP NOW →</button>
+                                        </div>
+                                        <div class="product-column">
+                                            <div class="product-item">
+                                                <h3>CREATINE POWDER</h3>
+                                                <img class="product-image" src="images/BBS_Creatine_Powder_1.webp" alt="">
+                                            </div>
+                                            <button class="product-btn" onclick="window.location.href='creatine-powder.html'">SHOP NOW →</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                        <li><a href="reviews.html" class="nav-link">REVIEWS</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="shop-now-btn" onclick="window.location.href='index.html'">SHOP NOW</button>
+                    <div class="cart-icon" style="position: relative; cursor: pointer;" onclick="window.location.href='cart.html'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M5.00014 14.2522H18.1359C19.1487 14.2522 19.6551 14.2522 20.0582 14.0634C20.4134 13.897 20.7118 13.6299 20.9163 13.2954C21.1485 12.9155 21.2044 12.4122 21.3163 11.4056L21.9013 6.14054C21.9355 5.83308 21.9525 5.67935 21.9031 5.56036C21.8597 5.45585 21.7821 5.36917 21.683 5.31447C21.5702 5.2522 21.4155 5.2522 21.1062 5.2522H4.50014M2 2.2522H3.24844C3.51306 2.2522 3.64537 2.2522 3.74889 2.30252C3.84002 2.34683 3.91554 2.41777 3.96544 2.50596C4.02212 2.60613 4.03037 2.73819 4.04688 3.00229L4.95312 17.5021C4.96963 17.7662 4.97788 17.8983 5.03456 17.9984C5.08446 18.0866 5.15998 18.1576 5.25111 18.2019C5.35463 18.2522 5.48694 18.2522 5.75156 18.2522H19M7.5 21.7522H7.51M16.5 21.7522H16.51M8 21.7522C8 22.0283 7.77614 22.2522 7.5 22.2522C7.22386 22.2522 7 22.0283 7 21.7522C7 21.4761 7.22386 21.2522 7.5 21.2522C7.77614 21.2522 8 21.4761 8 21.7522ZM17 21.7522C17 22.0283 16.7761 22.2522 16.5 22.2522C16.2239 22.2522 16 22.0283 16 21.7522C16 21.4761 16.2239 21.2522 16.5 21.2522C16.7761 21.2522 17 21.4761 17 21.7522Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </div>
+                    <div class="user-icon">
+                        <svg class="icon icon_user" xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                            <title>account</title>
+                            <path d="M14 4.14551C15.4718 4.14551 16.8508 4.42027 18.1357 4.96875L18.6094 5.18359C19.696 5.70703 20.6555 6.38431 21.4873 7.21582V7.2168L21.835 7.58105C22.6225 8.44936 23.2559 9.44525 23.7354 10.5684L23.9287 11.0547C24.3487 12.1996 24.5586 13.4162 24.5586 14.7041C24.5586 15.992 24.3487 17.2086 23.9287 18.3535L23.7354 18.8398C23.2559 19.963 22.6225 20.9588 21.835 21.8271L21.4873 22.1914C20.6554 23.0231 19.6962 23.7011 18.6094 24.2246L18.1357 24.4395C16.8508 24.9879 15.4718 25.2627 14 25.2627C12.7121 25.2627 11.4955 25.0528 10.3506 24.6328L9.86426 24.4395C8.58057 23.8914 7.46344 23.142 6.5127 22.1914H6.51172C5.68021 21.3596 5.00293 20.4001 4.47949 19.3135L4.26465 18.8398C3.71617 17.5549 3.44141 16.1759 3.44141 14.7041C3.44141 13.2323 3.71617 11.8533 4.26465 10.5684L4.47949 10.0947C5.00293 9.00807 5.68021 8.04859 6.51172 7.2168L6.5127 7.21582L6.87695 6.86914C7.74526 6.08156 8.74115 5.44821 9.86426 4.96875L10.3506 4.77539C11.4955 4.35545 12.7121 4.14551 14 4.14551ZM14 20.0127C12.9856 20.0127 12.0337 20.1448 11.1436 20.4082L10.7656 20.5283C9.79257 20.8641 8.94432 21.3318 8.21875 21.9287C8.95984 22.5557 9.83435 23.0529 10.8447 23.418L11.2344 23.5498C12.1434 23.836 13.0652 23.9795 14 23.9795C15.0685 23.9795 16.1204 23.792 17.1553 23.418L17.5361 23.2715C18.3865 22.9241 19.1333 22.4759 19.7793 21.9297C19.1344 21.4214 18.4045 21.0035 17.5879 20.6777L17.2227 20.54C16.2334 20.1888 15.1591 20.0127 14 20.0127ZM14 5.42871C11.4293 5.42871 9.24161 6.33163 7.43457 8.13867C5.62753 9.94572 4.72461 12.1334 4.72461 14.7041C4.72461 15.9936 4.9583 17.1769 5.42383 18.2549L5.60547 18.6533C6.03863 19.551 6.58297 20.3416 7.2373 21.0264C8.22084 20.3241 9.26304 19.7665 10.3652 19.3555L10.7891 19.209C11.7892 18.8891 12.8596 18.7295 14 18.7295C15.3031 18.7295 16.5149 18.9377 17.6348 19.3555L18.0508 19.5186C19 19.9096 19.903 20.4133 20.7617 21.0264C21.5114 20.242 22.1168 19.3188 22.5762 18.2549L22.7402 17.8457C23.0967 16.8795 23.2754 15.8324 23.2754 14.7041C23.2754 12.2941 22.4816 10.2211 20.8936 8.48242L20.5654 8.13867C18.7584 6.33163 16.5707 5.42871 14 5.42871ZM13.999 8.22949C14.9971 8.22949 15.8417 8.57258 16.5283 9.25879L16.6533 9.38867C17.2568 10.0505 17.5586 10.8514 17.5586 11.7871C17.5585 12.7228 17.2566 13.5234 16.6533 14.1855L16.5293 14.3154C15.8432 15.002 14.9989 15.3456 14.001 15.3457C13.0655 15.3457 12.2646 15.0443 11.6025 14.4414L11.4717 14.3164C10.7851 13.6302 10.4414 12.7861 10.4414 11.7881C10.4414 10.79 10.7845 9.94539 11.4707 9.25879L11.6016 9.13477C12.2633 8.53125 13.0634 8.22958 13.999 8.22949ZM14 9.5127C13.4399 9.5127 12.9585 9.68066 12.5527 10.0166L12.3828 10.1709C11.9443 10.6098 11.7247 11.1473 11.7246 11.7871C11.7246 12.4271 11.9441 12.9653 12.3828 13.4043L12.5527 13.5586C12.9585 13.8944 13.44 14.0625 14 14.0625C14.6401 14.0625 15.1781 13.8432 15.6172 13.4043L15.7715 13.2354C16.1075 12.8295 16.2754 12.3472 16.2754 11.7871C16.2753 11.2272 16.1073 10.7455 15.7715 10.3398L15.6172 10.1709C15.1781 9.73204 14.6401 9.5127 14 9.5127Z" fill="currentColor" stroke="currentColor" stroke-width="0.116667"></path>
+                        </svg>
+                    </div>
+                    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="mobile-sidebar-content">
+            <div class="mobile-sidebar-header">
+                <div class="mobile-logo">
+                    <img src="images/BBS-logo-white.avif" alt="Beast Bites">
+                </div>
+                <div class="mobile-close" id="mobileClose">
+                    <span>×</span>
+                </div>
+            </div>
+
+            <nav class="mobile-nav">
+                <div class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link">SHOP</a>
+                    <div class="mobile-submenu">
+                        <div class="mobile-product-grid">
+                            <div class="mobile-product-column">
+                                <div class="mobile-product-item">
+                                    <h3>CREATINE GUMMIES</h3>
+                                    <img class="mobile-product-image" src="images/image-removebg-preview.webp" alt="Creatine Gummies">
+                                </div>
+                                <button class="mobile-product-btn">SHOP NOW →</button>
+                            </div>
+                            <div class="mobile-product-column">
+                                <div class="mobile-product-item">
+                                    <h3>SLEEP GUMMIES</h3>
+                                    <img class="mobile-product-image" src="images/megamenu-Sleep-gummies.webp" alt="Sleep Gummies">
+                                </div>
+                                <button class="mobile-product-btn">SHOP NOW →</button>
+                            </div>
+                            <div class="mobile-product-column">
+                                <div class="mobile-product-item">
+                                    <h3>CREATINE POWDER</h3>
+                                    <img class="mobile-product-image" src="images/BBS_Creatine_Powder_1.webp" alt="Creatine Powder">
+                                </div>
+                                <button class="mobile-product-btn">SHOP NOW →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="mobile-nav-link">ABOUT</a>
+                <a href="reviews.html" class="mobile-nav-link">REVIEWS</a>
+            </nav>
+
+            <div class="mobile-sidebar-footer">
+                <button class="mobile-shop-btn">SHOP NOW</button>
+                <div class="mobile-icons">
+                    <div class="mobile-cart">🛒</div>
+                    <div class="mobile-user">👤</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Cart Container -->
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1>Shopping Cart</h1>
+            <p>Review your items before checkout</p>
+        </div>
+
+        <div class="cart-content">
+            <div id="cartItemsContainer">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+
+            <div class="cart-summary">
+                <h2 class="summary-title">Order Summary</h2>
+
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal</span>
+                    <span class="summary-value" id="subtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="summary-label">Shipping</span>
+                    <span class="summary-value" id="shipping">FREE</span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="summary-label">Tax</span>
+                    <span class="summary-value" id="tax">$0.00</span>
+                </div>
+
+                <div class="summary-total">
+                    <span class="summary-label">Total</span>
+                    <span class="summary-value" id="total">$0.00</span>
+                </div>
+
+                <button class="checkout-btn" onclick="window.location.href='checkout.html'">
+                    Proceed to Checkout
+                </button>
+
+                <a href="index.html" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beast Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
