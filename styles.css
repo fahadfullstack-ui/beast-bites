@@ -790,6 +790,125 @@ body.sidebar-open {
   font-style: italic;
 }
 
+.timeline-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.timeline-title {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ff6b6b 0%, #ff5252 100%);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.timeline-item-1 .timeline-time,
+.timeline-item-3 .timeline-time {
+  position: absolute;
+  left: 37%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+.timeline-item-1 .timeline-card,
+.timeline-item-3 .timeline-card {
+  position: absolute;
+  right: 27%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-item-2 .timeline-time {
+  position: absolute;
+  right: 37%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+.timeline-item-2 .timeline-card {
+  position: absolute;
+  left: 27%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-time {
+  font-weight: 900;
+  color: white;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.timeline-dot {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-card {
+  background: white;
+  border-radius: 20px;
+  padding: 15px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+  width: 180px;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  color: #5170ff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  text-align: center;
+}
+
 .benefits-section {
   margin-top: 50px;
   margin-bottom: 40px;
@@ -3058,240 +3177,17 @@ body.sidebar-open {
   }
 }
 
-/* Timeline */
-
-.timeline-section {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.timeline-title {
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-  margin-bottom: 40px;
-  line-height: 1.3;
-}
-
-.timeline {
-  position: relative;
-  padding: 20px 0;
-}
-
-.timeline:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(180deg, #ff6b6b 0%, #ff5252 100%);
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  margin-bottom: 80px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: center;
-  width: 100%;
-}
-
-.timeline-item-1 .timeline-time,
-.timeline-item-3 .timeline-time {
-  position: absolute;
-  left: 37%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 12px;
-}
-
-.timeline-item-1 .timeline-card,
-.timeline-item-3 .timeline-card {
-  position: absolute;
-  right: 27%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.timeline-item-2 .timeline-time {
-  position: absolute;
-  right: 37%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 12px;
-}
-
-.timeline-item-2 .timeline-card {
-  position: absolute;
-  left: 27%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.timeline-time {
-  font-weight: 900;
-  color: white;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-.timeline-dot {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  color: white;
-  font-weight: bold;
-  flex-shrink: 0;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
-  position: relative;
-  z-index: 2;
-}
-
-.timeline-card {
-  background: white;
-  border-radius: 20px;
-  padding: 15px 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s;
-  width: 180px;
-}
-
-.timeline-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
-}
-
-.card-text {
-  color: #5170ff;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  line-height: 1.3;
-  text-align: center;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .timeline-item-2 .timeline-card {
-    left: 18%;
+    left: 20%;
   }
   .timeline-item-1 .timeline-card,
   .timeline-item-3 .timeline-card {
-    right: 18%;
+    right: 20%;
   }
   .timeline-item-1 .timeline-time,
   .timeline-item-3 .timeline-time {
     left: 32%;
-  }
-  .timeline-item-2 .timeline-time {
-    right: 34%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1024px) {
-  .timeline-item-2 .timeline-card {
-    left: 24%;
-  }
-  .timeline-item-1 .timeline-card,
-  .timeline-item-3 .timeline-card {
-    right: 24%;
-  }
-  .timeline-item-1 .timeline-time,
-  .timeline-item-3 .timeline-time {
-    left: 34%;
-  }
-  .timeline-item-2 .timeline-time {
-    right: 36%;
-  }
-}
-
-@media (min-width: 550px) and (max-width: 767px) {
-  .timeline-card {
-    padding: 10px;
-    font-size: 12px;
-    width: 160px;
-  }
-  .timeline-item-2 .timeline-card {
-    left: 8%;
-  }
-  .timeline-item-1 .timeline-card,
-  .timeline-item-3 .timeline-card {
-    right: 8%;
-  }
-  .timeline-item-1 .timeline-time,
-  .timeline-item-3 .timeline-time {
-    left: 26%;
-  }
-  .timeline-item-2 .timeline-time {
-    right: 28%;
-  }
-}
-
-@media (max-width: 767px) {
-  .timeline-section {
-    margin-top: 30px;
-    padding: 0 20px;
-  }
-
-  .timeline-title {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 550px) {
-  .timeline-title {
-    font-size: 20px;
-  }
-
-  .timeline-item-1 .timeline-time,
-  .timeline-item-3 .timeline-time {
-    font-size: 10px;
-  }
-
-  .timeline-item-2 .timeline-time {
-    font-size: 10px;
-  }
-
-  .timeline-item {
-    margin-bottom: 50px;
-  }
-  .timeline-dot {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-  .timeline-card {
-    padding: 10px;
-    font-size: 12px;
-    width: 160px;
-    border-radius: 14px;
-    font-size: 10px;
-  }
-  .timeline-item-2 .timeline-card {
-    left: 0%;
-  }
-  .timeline-item-1 .timeline-card,
-  .timeline-item-3 .timeline-card {
-    right: 0%;
-  }
-  .timeline-item-1 .timeline-time,
-  .timeline-item-3 .timeline-time {
-    left: 12%;
-  }
-  .timeline-item-2 .timeline-time {
-    right: 14%;
-  }
-}
-@media (max-width: 425px) {
-  .timeline-card {
-    width: 80px;
   }
 }
 
@@ -3484,6 +3380,17 @@ body.sidebar-open {
   .products {
     gap: 15px;
   }
+  .timeline-section {
+    margin-top: 30px;
+  }
+
+  .timeline-section {
+    padding: 0 20px;
+  }
+
+  .timeline-title {
+    font-size: 22px;
+  }
 
   .testimonials-content {
     padding: 50px 0px;
@@ -3545,6 +3452,41 @@ body.sidebar-open {
 }
 
 @media (max-width: 767px) {
+  .timeline-card {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+  }
+  .timeline-card:hover {
+    transform: translateY(-50%);
+  }
+
+  .timeline-dot {
+    top: -70px;
+  }
+  .timeline-item.timeline-item-1 {
+    margin-top: 50px;
+  }
+  .timeline-item {
+    margin-bottom: 90px;
+  }
+
+  .timeline-item-1 .timeline-time,
+  .timeline-item-3 .timeline-time {
+    top: -90%;
+    left: 20%;
+  }
+  .timeline-item-2 .timeline-time {
+    top: -90%;
+    right: 20%;
+  }
+  .timeline-item.timeline-item-3 {
+    margin-bottom: 20px;
+  }
+  .timeline-section {
+    margin-bottom: 10px;
+  }
+
   .routine-card {
     flex-direction: column;
     align-items: center;
@@ -3654,6 +3596,24 @@ body.sidebar-open {
 
   .video-testimonials-header {
     margin-bottom: 30px;
+  }
+
+  .timeline-title {
+    font-size: 20px;
+  }
+
+  .timeline-item-1 .timeline-time,
+  .timeline-item-3 .timeline-time {
+    font-size: 10px;
+  }
+
+  .timeline-item-2 .timeline-time {
+    font-size: 10px;
+  }
+
+  .timeline-item-2 .timeline-card {
+    left: 20%;
+    /* width: 150px; */
   }
 
   .routine-title {
